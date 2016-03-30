@@ -1,12 +1,18 @@
-stream_ref <- function(s, n) UseMethod("stream_ref")
-stream_ref.lazylist <- function(s, n) {
+#' Get a single element of a stream
+#' @param stream A stream
+#' @param n An integer
+#' @export
+stream_ref <- function(stream, n) UseMethod("stream_ref")
+stream_ref.lazylist <- function(stream, n) {
     stopifnot(n > 0)
-    if (n == 1) return(stream_car(s))
+    if (n == 1) return(stream_car(stream))
     while (n > 1) {
-        s <- stream_cdr(s)
+        stream <- stream_cdr(stream)
         n <- n - 1
     }
-    stream_car(s)
+    stream_car(stream)
 }
 
-`[.lazylist` <- function(s, n) stream_ref(s, n)
+#' @rdname stream_ref
+#' @export
+`[.lazylist` <- function(stream, n) stream_ref(stream, n)
