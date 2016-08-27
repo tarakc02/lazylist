@@ -11,6 +11,10 @@ stream_for_each.lazylist <- function(stream, fun, until = 5) {
     while (until > 0 && !is.null(stream)) {
         fun(stream_car(stream))
         stream <- stream_cdr(stream)
+        if (!inherits(stream, "lazylist")) {
+            fun(stream)
+            return()
+        }
         until <- until - 1
     }
 }
