@@ -14,4 +14,3 @@ stream_map(s, f, ...)
 \description{
 Map a function onto a stream or streams
 }
-
