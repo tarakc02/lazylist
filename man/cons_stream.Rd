@@ -14,4 +14,3 @@ cons_stream(x, y)
 \description{
 Create a stream
 }
-

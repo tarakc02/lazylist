@@ -14,4 +14,3 @@ stream_filter(stream, predicate)
 \description{
 Filter a stream using a predicate function
 }
-

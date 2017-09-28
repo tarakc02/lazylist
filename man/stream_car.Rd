@@ -16,4 +16,3 @@ stream_cdr(stream)
 \code{stream_car} returns the first element of a stream, and 
 \code{stream_cdr} returns the rest of the stream
 }
-

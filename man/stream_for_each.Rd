@@ -19,4 +19,3 @@ Perform a function on each element of a stream (without returning values)
 \details{
 This function is only useful for the side effects of \code{fun}
 }
-

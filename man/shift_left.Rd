@@ -13,4 +13,3 @@ shift_left(stream)
 When viewing streams as sequences, \code{stream_cdr} is equivalent to 
 left-shifting the sequence. This function is just for convenience and readability
 }
-

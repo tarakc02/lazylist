@@ -14,4 +14,3 @@ stream_at(stream, filter)
 \description{
 Select elements of a stream
 }
-

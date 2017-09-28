@@ -17,4 +17,3 @@ weighted_pairs(s1, s2, weight)
 The output stream will be ordered in ascending order of the weight function on 
 each pair.
 }
-
