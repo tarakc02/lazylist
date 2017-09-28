@@ -1,11 +1,11 @@
 Package: lazylist
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.2
+Title: Lazily Evaluated Lists
+Version: 0.3
 Date: 2016-03-26
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Tarak Shah
+Maintainer: Tarak Shah <tarak_shah@berkeley.edu>
+Description: Based on chapter 3 of Structure and Interpretation of Computer Programs
+License: MIT + file LICENSE
 LazyData: TRUE
 RoxygenNote: 6.0.1
