@@ -5,16 +5,16 @@
 #' @param start_from Find indexes on or after this position
 #'
 #' @export
-stream_which <- function(stream, predicate, start_from = 1) {
+stream_which <- function(stream, predicate, start_from = 1L) {
     ind <- start_from
 
     while(!predicate(stream_car(stream))) {
-        ind <- ind + 1
+        ind <- ind + 1L
         stream <- stream_cdr(stream)
     }
 
     cons_stream(ind,
                 stream_which(stream_cdr(stream),
                              predicate,
-                             start_from = ind + 1))
+                             start_from = ind + 1L))
 }
